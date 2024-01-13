@@ -1,0 +1,19 @@
+{
+  "name": "@dlguswo333/reveal-multiplex",
+  "version": "0.1.0",
+  "description": "a rewrite of reveal multiplex in 2024.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dlguswo333 <dlguswo002@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "reveal",
+    "revealjs",
+    "presentation",
+    "multiplex",
+    "share"
+  ]
+}
