@@ -31,7 +31,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run build:cjs && npm run build:esm",
     "build:cjs": "tsc --project tsconfig.cjs.json",
-    "build:esm": "tsc --project tsconfig.esm.json"
+    "build:esm": "tsc --project tsconfig.esm.json",
+    "lint": "eslint ./src/**/*"
   },
   "author": "dlguswo333 <dlguswo002@gmail.com>",
   "license": "MIT",
@@ -43,6 +44,9 @@
     "share"
   ],
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.18.1",
+    "@typescript-eslint/parser": "^6.18.1",
+    "eslint": "^8.56.0",
     "typescript": "^5.3.3"
   }
 }
