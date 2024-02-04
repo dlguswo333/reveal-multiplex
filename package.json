@@ -2,7 +2,7 @@
   "name": "@dlguswo333/reveal-multiplex",
   "version": "0.1.0",
   "description": "a rewrite of reveal multiplex in 2024.",
-  "main": "index.js",
+  "main": "./dist/cjs/server.js",
   "type": "module",
   "types": "",
   "exports": {
