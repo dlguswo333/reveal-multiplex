@@ -1,4 +1,5 @@
-import {Config, MASTER_TOKEN_PATH, Message, MessageType, Nullable, mergeConfigs, packageName} from './common';
+import {MASTER_TOKEN_PATH, MessageType, mergeConfigs, packageName} from './common.js';
+import type {Config, Message, Nullable} from './common.js';
 import crypto from 'node:crypto';
 import Fastify, {FastifyReply, FastifyRequest} from 'fastify';
 import fastifyStatic from '@fastify/static';

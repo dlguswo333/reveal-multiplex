@@ -1,5 +1,6 @@
 import {type RevealState} from 'reveal.js';
-import {MASTER_TOKEN_KEY, MASTER_TOKEN_PATH, Message, MessageType, packageName} from './common.js';
+import {MASTER_TOKEN_KEY, MASTER_TOKEN_PATH, MessageType, packageName} from './common.js';
+import type {Message} from './common.js';
 
 export interface MasterSocket {
   pushState: (message: string | object | number) => void;
