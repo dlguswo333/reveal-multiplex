@@ -5,9 +5,13 @@ export const MASTER_TOKEN_PATH = '/master-token';
 
 export const packageName = '@dlguswo333/reveal-multiplex';
 
-/** Merge two configs respecting the second one. */
+/** Merge two configs respecting the second one but falsy values. */
 export const mergeConfigs = (a: Config, b: Config): Config => {
-  const ret = {...a, ...b};
+  const ret = Object.keys(b).reduce((merged, key) => {
+    merged[key] = b[key] || a[key];
+    return merged;
+  }, {} as Config);
+
   return ret;
 };
 
