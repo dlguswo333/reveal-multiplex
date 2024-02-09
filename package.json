@@ -3,8 +3,13 @@
   "version": "0.1.0",
   "description": "a rewrite of reveal multiplex in 2024.",
   "main": "./dist/cjs/server.js",
+  "module": "./dist/esm/server.js",
+  "types": "./dist/esm/server.d.ts",
   "type": "module",
-  "types": "",
+  "files": [
+    "./dist",
+    "*.d.ts"
+  ],
   "exports": {
     "./server": {
       "require": {
@@ -29,7 +34,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run build:cjs && npm run build:esm",
+    "build": "npm run build:cjs && npm run build:esm && node deploy.js",
     "build:cjs": "tsc --project tsconfig.cjs.json",
     "build:esm": "tsc --project tsconfig.esm.json",
     "lint": "eslint ./src/**/*"
