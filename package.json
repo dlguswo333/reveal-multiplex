@@ -37,7 +37,8 @@
     "build": "npm run build:cjs && npm run build:esm && node deploy.js",
     "build:cjs": "tsc --project tsconfig.cjs.json",
     "build:esm": "tsc --project tsconfig.esm.json",
-    "lint": "eslint ./src/**/*"
+    "lint": "eslint ./src/**/*",
+    "prepublishOnly": "npm run lint"
   },
   "author": "dlguswo333 <dlguswo002@gmail.com>",
   "license": "MIT",
