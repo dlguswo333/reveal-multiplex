@@ -68,3 +68,4 @@ and do the same.
 ## Caveats
 - It does not support secure connections as of now. Please use it on secure network.
 - Every time the server restarts, you need to reconnect the master as it forgets the previous master token.
+- The package's typing systems are a little messy. Supporting dual package, conditional exports is tough one.
