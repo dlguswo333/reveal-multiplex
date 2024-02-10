@@ -1,6 +1,7 @@
 {
   "name": "@dlguswo333/reveal-multiplex",
   "version": "0.1.0",
+  "private": false,
   "description": "a rewrite of reveal multiplex in 2024.",
   "main": "./dist/cjs/server.js",
   "module": "./dist/esm/server.js",
